@@ -6,7 +6,7 @@
 #define false 0
 #endif
 #ifndef CLVS_MAX_COLS
-#define CLVS_MAX_COLS 200
+#define CLVS_MAX_COLS 300
 #endif
 #ifndef CLVS_MAX_ROWS
 #define CLVS_MAX_ROWS 100
@@ -16,6 +16,10 @@
 //To get console sizes
 #include <sys/ioctl.h>
 #include <unistd.h>
+
+
+//To perform clear screen
+#include <stdlib.h>
 
 
 
@@ -42,12 +46,12 @@ void print_pixel(int col, int row, char ch){
 }
 
 void CLVS_Start_Video(){
-    //Clear screen
+    system("clear");
     
 }
 
 void CLVS_Finalize_Video(){
-    //Clear screen
+    system("clear"); 
 }
 
 
