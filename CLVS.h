@@ -42,12 +42,12 @@ void print_pixel(int col, int row, char ch){
 }
 
 void CLVS_Start_Video(){
-    //system("@cls||clear");
+    //Clear screen
     
 }
 
 void CLVS_Finalize_Video(){
-    //system("@cls||clear");
+    //Clear screen
 }
 
 
